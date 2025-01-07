@@ -1,4 +1,4 @@
-# Task 2: Subjectivity in News Articles
+# Task 3: Fact-checkign numerical claims
 
 This task focuses on verifying claims with numerical quantities and temporal expressions. Numerical claims are defined as those requiring validation of explicit or implicit quantitative or temporal details. Participants must classify each claim as True, False, or Conflicting based on a short list of evidence. The fact-verification task is available in languages Spanish, Arabic and English
 
