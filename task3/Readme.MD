@@ -58,15 +58,15 @@ TBA -->
 
 ## Contents of the Task 3 Directory
 
-- Main folder: [data](./data)
-  - Contains a subfolder for each language which contain the data as TSV format with .tsv extension (train_LANG.tsv, dev_LANG.tsv, test_LANG.tsv).
-  As LANG we used standard language code for each language.
-- Main folder: [baseline](./baseline)<br/>
-  - Contains a file, baseline.py, used to train a baseline and provide predictions.
-  - Contains a .tsv file for each language, consisting of the predictions of the baseline over the dev sets.
-  - Contains a README.md file that reports the scores obtained by the baseline on the dev sets.
-- Main folder: [scorer](./scorer)<br/>
-  - Contains a single file, evaluate.py, that checks the format of a submission and evaluate the various metrics.
+- Main folder: [data](task3/data)
+  - Contains a subfolder for each language which contain the data as json format with claims and related meta-data for train and validation sets.
+- Main folder: [baseline](clef2025-checkthat-lab/task3/baselines)<br/>
+  - Contains a notebook train_using_bm25.py to train a nli model using BM25 retrieved evidence from corpus.
+  - Contains a file, inference.py, used to provide predictions using a trained model.
+  - Contains a .tsv file for each language (e.g - clef2025-checkthat-lab/task3/output/English/output_example.csv), consisting of the examples of  predictions of the baseline over the dev sets.
+  - Contains a README.md file.
+- Main folder: [scorer](clef2025-checkthat-lab/task3/baselines/English)<br/>
+  - Contains a single file, clef2025-checkthat-lab/task3/baselines/English/eval_veracity_prediction.py, that checks the format of a submission and evaluate the various metrics.
 - [README.md](./README.md) <br/>
 
 ## Datasets statistics
