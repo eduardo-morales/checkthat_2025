@@ -61,7 +61,7 @@ TBA -->
 - Main folder: [data](task3/data)
   - Contains a subfolder for each language which contain the data as json format with claims and related meta-data for train and validation sets.
 - Main folder: [baseline](clef2025-checkthat-lab/task3/baselines)<br/>
-  - Contains a notebook train_using_bm25.py to train a nli model using BM25 retrieved evidence from corpus.
+  - Contains a notebook train_using_bm25.py to train a nli model using BM25 retrieved evidence from corpus. (**Will be provided soon**)
   - Contains a file, inference.py, used to provide predictions using a trained model.
   - Contains a .tsv file for each language (e.g - clef2025-checkthat-lab/task3/output/English/output_example.csv), consisting of the examples of  predictions of the baseline over the dev sets.
   - Contains a README.md file.
@@ -90,12 +90,19 @@ TBA -->
 ## Input Data Format
 
 The data will be provided as a json file with multiple fields such as:
-> claim <TAB> taxonomy <TAB> label
+> claim <TAB> taxonomy <TAB> doc <TAB> label
 
 Where: <br>
-* sentence_id: sentence id for a given sentence in a news article<br/>
-* sentence: sentence's text <br/>
-* label: *OBJ* and *SUBJ*
+* claim: a given claim<br/>
+* taxonomy: claim's taxonomy classified into *temporal*, *statistical*, *comparison* and *interval* <br/>
+* doc: Oracle document which is the justification given for the claim verdict by manual fact-checkers
+* label: *True*, *Conflicting* and *False*
+* Other meta-data such as claim source url, evidence url are given 
+
+
+The evidence collection provided consists of document ids paired with the corresponding textile
+
+The top-100 Bm25 evidence gives the text of top-100 documents from above corpus for each claim.
 
 <!-- **Note:** For English, the training and development (validation) sets will also include a fourth column, "solved_conflict", whose boolean value reflects whether the annotators had a strong disagreement. -->
 
