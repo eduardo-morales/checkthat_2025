@@ -67,6 +67,8 @@ TBA -->
   - Contains a README.md file.
 - Main folder: [scorer](clef2025-checkthat-lab/task3/baselines/English)<br/>
   - Contains a single file, clef2025-checkthat-lab/task3/baselines/English/eval_veracity_prediction.py, that checks the format of a submission and evaluate the various metrics.
+  The corpus / evidence collection can be found at [Evidence collection](https://drive.google.com/drive/folders/1GYzSK0oU2MiaKbyBO3hE8kO4gdmxDjCv?usp=drive_link)
+  Alternatively instead of using whole corpus if you want to use BM25 retrieved evidence please download the top-100 bm25 evidence from here https://[BM25 top-100](drive.google.com/drive/folders/1f8stxtVT785NvGHrNkRoN1Z69jOuU-Jp?usp=sharing)
 - [README.md](./README.md) <br/>
 
 ## Datasets statistics
