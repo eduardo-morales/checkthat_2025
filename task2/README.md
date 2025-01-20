@@ -1,0 +1,163 @@
+# Task 2: Claim Normalization
+
+Given a noisy, unstructured social media post, the task is to simplify it into a concise form.
+This is a text generation task in which systems have to generate the normlized claims for the goven social media posts.
+
+The task comprises two settings:
+- **Monolingual**: where the train and test is given for language L
+- **Zero-shot**: only test data is given for language L
+
+__Table of contents:__
+
+<!-- - [Evaluation Results](#evaluation-results) -->
+- [List of Versions](#list-of-versions)
+- [Contents of the Task 1 Directory](#contents-of-the-repository)
+- [Input Data Format](#input-data-format)
+- [Output Data Format](#output-data-format)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Credits](#credits)
+
+<!-- ## Evaluation Results
+
+TBA -->
+
+## List of Versions
+- [20/01/2025] Data released.
+
+<!-- * **subtask-2A-english**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [21/02/2023] previously released training data contained also validation data, they are now split in two separate files.
+  - [30/01/2023] training data are released.
+* **subtask-2A-arabic**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [10/03/2023] training and validation data are released.
+* **subtask-2A-dutch**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [16/03/2023] training and validation data are released.
+* **subtask-2A-german**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [02/03/2023] training and validation data are released.
+* **subtask-2A-italian**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [21/02/2023] validation data are released.
+  - [30/01/2023] training data are released.
+* **subtask-2A-turkish**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [02/03/2023] training and validation data are released.
+* **subtask-2A-multilingual**
+  - [03/05/2023] (unlabeled) test data are released.
+  - [23/03/2023] training and validation data are released. -->
+
+## Contents of the Task 2 Directory
+
+- Data folder: [data](./data)
+  - Contains a subfolder for  train, test and dev sets. 
+  - Each split has subfolders for each language, in the csv format.
+<!-- - Main folder: [baseline](./baseline)<br/>
+  - Contains a single file, baseline.py, used to train a baseline and provide predictions.
+- Main folder: [scorer](./scorer)<br/>
+  - Contains a single file, evaluate.py, that checks the format of a submission and evaluate the various metrics. -->
+- [README.md](./README.md) <br/>
+
+<!-- ## Datasets statistics
+
+* **English**
+  - train: 830 sentences, 532 OBJ, 298 SUBJ
+  - dev: 462 sentences, 222 OBJ, 240 SUBJ
+  - dev-test: 484 sentences, 362 OBJ, 122 SUBJ 
+  - test: TBA
+* **Italian**
+  - train: 1613 sentences, 1231 OBJ, 382 SUBJ
+  - dev: 667 sentences, 490 OBJ, 177 SUBJ
+  - dev-test - 513 sentences, 377 OBJ, 136 SUBJ
+  - test: TBA
+* **German**
+  - train: 800 sentences, 492 OBJ, 308 SUBJ
+  - dev: 491 sentences, 317 OBJ, 174 SUBJ
+  - dev-test - 337 sentences, 226 OBJ, 111 SUBJ
+  - test: TBA
+* **Bulgarian**
+  - train: 729 sentences, 406 OBJ, 323 SUBJ
+  - dev: 314 sentences, 175 OBJ, 139 SUBJ
+  - dev-test - 250 sentences, 143 OBJ, 107 SUBJ
+  - test: TBA
+* **Arabic**
+  - train: 1185 sentences, 905 OBJ, 280 SUBJ
+  - dev: 742 sentences, 590 OBJ, 152 SUBJ
+  - dev-test - 748 sentences, 425 OBJ, 323 SUBJ
+  - test: TBA
+
+## Input Data Format
+
+The data will be provided as a TSV file with three columns:
+> sentence_id <TAB> sentence <TAB> label
+
+Where: <br>
+* sentence_id: sentence id for a given sentence in a news article<br/>
+* sentence: sentence's text <br/>
+* label: *OBJ* and *SUBJ*
+
+<!-- **Note:** For English, the training and development (validation) sets will also include a fourth column, "solved_conflict", whose boolean value reflects whether the annotators had a strong disagreement. -->
+
+<!-- **Examples:** -->
+
+<!-- > b9e1635a-72aa-467f-86d6-f56ef09f62c3  Gone are the days when they led the world in recession-busting SUBJ -->
+<!-- > -->
+<!-- > f99b5143-70d2-494a-a2f5-c68f10d09d0a  The trend is expected to reverse as soon as next month.  OBJ --> -->
+
+## Output Data Format
+
+The output must be a CSV format with two columns: post and normalized claim.
+
+## Evaluation Metrics
+
+We will use the METEOR measure for the ranking of teams.
+
+<!--
+There is a limit of 5 runs (total and not per day), and only one person from a team is allowed to submit runs.
+
+Submission Link: Coming Soon
+
+Evaluation File task3/evaluation/CLEF_-_CheckThat__Task3ab_-_Evaluation.txt -->
+
+<!-- ## Scorers
+
+To evaluate the output of your model which should be in the output format required, please run the script below:
+
+> python evaluate.py -g dev_truth.tsv -p dev_predicted.tsv
+
+where dev_predicted.tsv is the output of your model on the dev set, and dev_truth.tsv is the golden label file provided by us.
+
+The file can be used also to validate the format of the submission, simply use the provided test file as gold data.
+The evaluation will not be performed, but the format of your input will be checked.
+
+
+## Baselines
+
+The script to train the baseline is provided in the related directory.
+The script can be run as follow:
+
+> python baseline.py -trp train_data.tsv -ttp dev_data.tsv
+
+where train_data.tsv is the file to be used for training and dev_data.tsv is the file on which doing the prediction.
+
+The baseline is a logistic regressor trained on a Sentence-BERT multilingual representation of the data.
+
+<!-- ### Task 3: Multi-Class Fake News Detection of News Articles
+
+For this task, we have created a baseline system. The baseline system can be found at https://zenodo.org/record/6362498
+ --> -->
+
+## Submission
+
+TBA
+
+## Related Work
+
+Information regarding the task and data can be found in the following paper:
+
+> Megha Sundriyal, Tanmoy Chakraborty, and Preslav Nakov. [From Chaos to Clarity: Claim Normalization to Empower Fact-Checking.](https://aclanthology.org/2023.findings-emnlp.439/) Findings of the Association for Computational Linguistics: EMNLP 2023. 2023. pp. 6594 - 6609.
+
+
+## Credits
+Please find it on the task website: https://checkthat.gitlab.io/clef2025/task2/
