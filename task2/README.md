@@ -61,11 +61,14 @@ __Table of contents:__
 ## Input Data Format
 
 The data will be provided as a CSV file with two columns:
-> post <TAB> normalized claim 
+> post, <TAB> normalized claim 
 
 ## Output Data Format
 
-The output must be a CSV format with two columns: post and normalized claim.
+The output must be a CSV format with only one column:
+> normalized claim.
+
+DO NOT shuffle the test data. 
 
 ## Evaluation Metrics
 
