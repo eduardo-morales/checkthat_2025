@@ -11,7 +11,7 @@ __Table of contents:__
 
 <!-- - [Evaluation Results](#evaluation-results) -->
 - [List of Versions](#list-of-versions)
-- [Contents of the Task 1 Directory](#contents-of-the-repository)
+- [Contents of the Task 2 Directory](#contents-of-the-repository)
 - [Input Data Format](#input-data-format)
 - [Output Data Format](#output-data-format)
 - [Evaluation Metrics](#evaluation-metrics)
