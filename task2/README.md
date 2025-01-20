@@ -19,7 +19,6 @@ __Table of contents:__
 
 <!-- ## Evaluation Results
 
-TBA -->
 
 ## List of Versions
 - [20/01/2025] Data released.
@@ -146,7 +145,7 @@ The baseline is a logistic regressor trained on a Sentence-BERT multilingual rep
 <!-- ### Task 3: Multi-Class Fake News Detection of News Articles
 
 For this task, we have created a baseline system. The baseline system can be found at https://zenodo.org/record/6362498
- --> -->
+ --> 
 
 ## Submission
 
