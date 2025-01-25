@@ -165,7 +165,7 @@ The inference script is also provided in relevant directory:
 
 where train_data.tsv is the file to be used for training and dev_data.tsv is the file on which doing the prediction.
 
-The baseline is a logistic regressor trained on a Sentence-BERT multilingual representation of the data.
+The baseline is a RoBERTA based NLI model though participants are free to use an model including LLMs. You can also refer to the paper for the idea.
 
 <!-- ### Task 3: Multi-Class Fake News Detection of News Articles
 
