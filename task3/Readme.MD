@@ -70,6 +70,8 @@ TBA -->
   The corpus / evidence collection can be found at [Evidence collection](https://drive.google.com/drive/folders/1GYzSK0oU2MiaKbyBO3hE8kO4gdmxDjCv?usp=drive_link)
   Alternatively instead of using whole corpus if you want to use BM25 retrieved evidence for original claims, please refer clef2025-checkthat-lab/task3/data/English/bm25_evidence. The bm25 evidence for training claims can be found at [train_bm25](https://drive.google.com/drive/folders/1ZYhjUB_POyBbrAWBxWh5FljyG81Gymuo?usp=drive_link)
 
+The bm25 evidence for decomposed questions for train and validation sets can be found at [Decomposed claims BM25 evidence](https://drive.google.com/drive/folders/1j8pr4xIe9B3tdxwy2jHuuc545YiiSPBK?usp=sharing)
+
 - [README.md](./README.md) <br/>
 
 ## Datasets statistics
