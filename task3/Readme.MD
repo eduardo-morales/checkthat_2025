@@ -61,7 +61,7 @@ TBA -->
 - Main folder: [data](task3/data)
   - Contains a subfolder for each language which contain the data as json format with claims and related meta-data for train and validation sets.
 - Main folder: [baseline](clef2025-checkthat-lab/task3/baselines)<br/>
-  - Contains a notebook train_using_bm25.py to train a nli model using BM25 retrieved evidence from corpus. (**Will be provided soon**)
+  - Contains a notebook train_using_bm25.py to train a nli model using BM25 retrieved evidence from corpus.
   - Contains a file, inference.py, used to provide predictions using a trained model.
   - Contains a .tsv file for each language (e.g - clef2025-checkthat-lab/task3/output/English/output_example.csv), consisting of the examples of  predictions of the baseline over the dev sets.
   - Contains a README.md file.
@@ -70,7 +70,9 @@ TBA -->
   The corpus / evidence collection can be found at [Evidence collection](https://drive.google.com/drive/folders/1GYzSK0oU2MiaKbyBO3hE8kO4gdmxDjCv?usp=drive_link)
   Alternatively instead of using whole corpus if you want to use BM25 retrieved evidence for original claims, please refer clef2025-checkthat-lab/task3/data/English/bm25_evidence. The bm25 evidence for training claims can be found at [train_bm25](https://drive.google.com/drive/folders/1ZYhjUB_POyBbrAWBxWh5FljyG81Gymuo?usp=drive_link)
 
-The bm25 evidence for decomposed questions for train and validation sets can be found at [Decomposed claims BM25 evidence](https://drive.google.com/drive/folders/1j8pr4xIe9B3tdxwy2jHuuc545YiiSPBK?usp=sharing)
+The bm25 evidence for decomposed questions for train and validation sets of English can be found at [Decomposed claims BM25 evidence](https://drive.google.com/drive/folders/1j8pr4xIe9B3tdxwy2jHuuc545YiiSPBK?usp=sharing)
+
+BM25 evidence for all train and validation claims together for Spanish. Map the claims to train and validation claim files to get corresponding evidence [Spanish Bm25 evidence] (https://drive.google.com/drive/folders/1MSaijGQ4jafMceFdi4hVacxzMxhNkWSl?usp=sharing)
 
 - [README.md](./README.md) <br/>
 
