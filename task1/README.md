@@ -27,6 +27,7 @@ __Table of contents:__
 TBA -->
 
 ## List of Versions
+- [04/02/2025] Arabic dataset updated (We used the dataset released here: https://arxiv.org/pdf/2406.05559).
 - [13/01/2025] Training data released.
 
 <!-- * **subtask-2A-english**
@@ -69,7 +70,7 @@ TBA -->
 * **English**
   - train: 830 sentences, 532 OBJ, 298 SUBJ
   - dev: 462 sentences, 222 OBJ, 240 SUBJ
-  - dev-test: 484 sentences, 362 OBJ, 122 SUBJ 
+  - dev-test: 484 sentences, 362 OBJ, 122 SUBJ
   - test: TBA
 * **Italian**
   - train: 1613 sentences, 1231 OBJ, 382 SUBJ
@@ -83,12 +84,12 @@ TBA -->
   - test: TBA
 * **Bulgarian**
   - train: 729 sentences, 406 OBJ, 323 SUBJ
-  - dev: 314 sentences, 175 OBJ, 139 SUBJ
+  - dev: 467 sentences, 175 OBJ, 139 SUBJ
   - dev-test - 250 sentences, 143 OBJ, 107 SUBJ
   - test: TBA
 * **Arabic**
-  - train: 1185 sentences, 905 OBJ, 280 SUBJ
-  - dev: 742 sentences, 590 OBJ, 152 SUBJ
+  - train: 2,446 sentences, 1391 OBJ, 1055 SUBJ
+  - dev: 742 sentences, 266 OBJ, 201 SUBJ
   - dev-test - 748 sentences, 425 OBJ, 323 SUBJ
   - test: TBA
 
@@ -165,6 +166,8 @@ Information regarding the annotation guidelines can be found in the following pa
 > Federico Ruggeri, Francesco Antici, Andrea Galassi, aikaterini Korre, Arianna Muti, Alberto Barron,  _[On the Definition of Prescriptive Annotation Guidelines for Language-Agnostic Subjectivity Detection](https://ceur-ws.org/Vol-3370/paper10.pdf)_, in: Proceedings of Text2Story — Sixth Workshop on Narrative Extraction From Texts, CEUR-WS.org, 2023, Vol 3370, pp. 103 - 111
 
 > Francesco Antici, Andrea Galassi, Federico Ruggeri, Katerina Korre, Arianna Muti, Alessandra Bardi, Alice Fedotova, Alberto Barrón-Cedeño, _[A Corpus for Sentence-level Subjectivity Detection on English News Articles](https://arxiv.org/abs/2305.18034)_, in: Proceedings of Joint International Conference on Computational Linguistics, Language Resources and Evaluation (COLING-LREC), 2024
+
+> Suwaileh, Reem, Maram Hasanain, Fatema Hubail, Wajdi Zaghouani, and Firoj Alam. "ThatiAR: Subjectivity Detection in Arabic News Sentences." arXiv preprint arXiv:2406.05559 (2024).
 
 
 
