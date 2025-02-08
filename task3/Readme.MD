@@ -82,12 +82,11 @@ BM25 evidence for all train and validation claims together for Spanish. Map the 
   - train: 9935 claims,
   - dev: 3084 claims,
 
-* **Task 3 - English**
-  - train: 1863 claims
+* **Task 3 - Spanish**
+  - train: 1506 claims
+  - val: 377 claims
 
-
-
-* **Task 3 - spanish**
+* **Task 3 - Arabic**
   - train: TBA
 
 
@@ -95,7 +94,7 @@ BM25 evidence for all train and validation claims together for Spanish. Map the 
 ## Input Data Format
 
 The data will be provided as a json file with multiple fields such as:
-> claim <TAB> taxonomy <TAB> doc <TAB> label
+> claim <TAB> taxonomy <TAB> doc <TAB> label etc...
 
 Where: <br>
 * claim: a given claim<br/>
@@ -105,9 +104,9 @@ Where: <br>
 * Other meta-data such as claim source url, evidence url are given 
 
 
-The evidence collection provided consists of document ids paired with the corresponding textile
+The evidence collection provided consists of document ids paired with the corresponding text
 
-The top-100 Bm25 evidence gives the text of top-100 documents from above corpus for each claim.
+The top-100 Bm25 evidence gives the text of top-100 documents from above corpus for each claim or at sub-question level in case of decomposition based approaches.
 
 <!-- **Note:** For English, the training and development (validation) sets will also include a fourth column, "solved_conflict", whose boolean value reflects whether the annotators had a strong disagreement. -->
 
@@ -169,7 +168,7 @@ The inference script is also provided in relevant directory:
 
 where train_data.tsv is the file to be used for training and dev_data.tsv is the file on which doing the prediction.
 
-The baseline is a RoBERTA based NLI model though participants are free to use an model including LLMs. You can also refer to the paper for the idea.
+The baseline is a RoBERTA based NLI model though participants are free to use any model including LLMs. You can also refer to the paper for the idea.
 
 <!-- ### Task 3: Multi-Class Fake News Detection of News Articles
 
