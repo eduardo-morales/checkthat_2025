@@ -4,8 +4,8 @@ Given a noisy, unstructured social media post, the task is to simplify it into a
 This is a text generation task in which systems have to generate the normlized claims for the goven social media posts.
 
 The task comprises two settings:
-- **Monolingual**: where the train and test is given for language L
-- **Zero-shot**: only test data is given for language L
+- **Monolingual**: In this setup, the training, development, and test datasets are all provided for the specific language. The model is trained, validated, and tested using data exclusively from this single language, meaning that all the stages (training, validation, and testing) are confined to the same language. This setup ensures that the model learns language-specific patterns and structures. Languages: English, German, French, Spanish, Portugese, Hindi, Marathi, Punjabi, Tamil, Arabic, Thai, Indonesian, and Polish. 
+- **Zero-shot**: In this case, only the test data is available for the specific language, and you are not provided with any training or development data for that language. You are free to use data from other languages for training your models, or you can choose to conduct a zero-shot experiment using LLMs where the model is tested on the target language without being exposed to any training data. This approach evaluates how well the model can generalize to unseen languages. Languages: Dutch, Romanian, Bengali, Telugu, Korean, Greek, and Czech. 
 
 __Table of contents:__
 
