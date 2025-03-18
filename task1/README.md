@@ -157,7 +157,44 @@ For this task, we have created a baseline system. The baseline system can be fou
 
 ## Submission
 
-TBA
+### Scorers, Format Checkers, and Baseline Scripts
+
+- ``baseline/baseline.py``: trains the baseline model on input train data and computes prediction on input test data.
+- ``scorer/evaluate.py``: runs data format checkers and compute metrics based on given ground-truth and predictions.
+
+### Submission Guidelines
+
+- Make sure that you create one account for each team, and submit it through one account only.
+- The last file submitted to the leaderboard will be considered as the final submission.
+- Name of the output file has to be `task1_{SETTING}.tsv` with `.tsv` extension (e.g., ``task1_arabic.tsv``); otherwise, you will get an error on the leaderboard.
+In particular, the settings are: ``mono_arabic``, ``mono_english``, ``mono_german``, ``mono_italian``, ``multilingual``, ``zero_greek``, ``zero_polish``, ``zero_ukrainian``, and ``zero_romanian``.
+- You have to zip the tsv (e.g., `zip task1_mono_arabic.zip`), zip and submit it through the codalab page.
+- It is required to submit the team name for each submission and fill out the questionnaire (link will be provided, once the competition started) to provide some details on your approach as we need that information for the overview paper.
+- You are allowed to submit max 200 submissions per day for each subtask.
+- We will keep the leaderboard private till the end of the submission period, hence, results will not be available upon submission. All results will be available after the evaluation period.
+
+## Leaderboard
+
+We report macro-F1 score to compare models on each setting.
+
+### Dev-test
+
+| **Model**     | **Arabic** | **Bulgarian** | **English** | **German** | **Italian** |
+|---------------|------------|---------------|-------------|------------|-------------|
+| MiniLM-L12-v2 | 0.55       | 0.75          | 0.63        | 0.69       | 0.63        |
+
+### Monolingual
+
+Will be made publicly available once evaluation ends.
+
+### Multilingual
+
+Will be made publicly available once evaluation ends.
+
+### Zero-shot
+
+Will be made publicly available once evaluation ends.
+
 
 ## Related Work
 

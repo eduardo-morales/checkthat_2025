@@ -95,13 +95,13 @@ if __name__ == '__main__':
         scores = evaluate(whole_data)
 
         logging.info(f"""
-            macro-F1: {scores['macro-F1']:.2f}
-            macro-P: {scores['macro-P']:.2f}
-            macro-R: {scores['macro-R']:.2f}
+            macro-F1: {scores['macro-F1']:.4f}
+            macro-P: {scores['macro-P']:.4f}
+            macro-R: {scores['macro-R']:.4f}
             
-            SUBJ-F1: {scores['SUBJ-F1']:.2f}
-            SUBJ-P: {scores['SUBJ-P']:.2f}
-            SUBJ-R: {scores['SUBJ-R']:.2f}
+            SUBJ-F1: {scores['SUBJ-F1']:.4f}
+            SUBJ-P: {scores['SUBJ-P']:.4f}
+            SUBJ-R: {scores['SUBJ-R']:.4f}
             
-            accuracy: {scores['accuracy']:.2f}
+            accuracy: {scores['accuracy']:.4f}
         """)
