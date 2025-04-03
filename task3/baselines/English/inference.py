@@ -12,7 +12,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import os
 from torch import Tensor
-from code.utils.load_veracity_predictor import VeracityClassifier
+from load_veracity_predictor import VeracityClassifier
 from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
