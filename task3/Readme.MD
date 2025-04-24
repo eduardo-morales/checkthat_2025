@@ -72,6 +72,9 @@ TBA -->
 
 The bm25 evidence for decomposed questions for train and validation sets of English can be found at [Decomposed claims BM25 evidence](https://drive.google.com/drive/folders/1j8pr4xIe9B3tdxwy2jHuuc545YiiSPBK?usp=sharing)
 
+The Arabic corpus or evidence collection can be found at [Arabic Corpus] (https://drive.google.com/file/d/1J5RaPaWgD5hwUWJg7yCVVi4lM0gIYEYV/view?usp=sharing)
+
+BM25 evidence for arabic train, val and test sets can be found at [Arabic BM25 evidence](https://drive.google.com/drive/folders/1Gb-uBTuChSaY_R3qMQkbwSertywQTmCO?usp=sharing)
 BM25 evidence for all train and validation claims together for Spanish. Map the claims to train and validation claim files to get corresponding evidence [Spanish Bm25 evidence] (https://drive.google.com/drive/folders/1MSaijGQ4jafMceFdi4hVacxzMxhNkWSl?usp=sharing)
 
 - [README.md](./README.md) <br/>
