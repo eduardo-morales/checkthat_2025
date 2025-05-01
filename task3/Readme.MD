@@ -178,8 +178,19 @@ The baseline is a RoBERTA based NLI model though participants are free to use an
 For this task, we have created a baseline system. The baseline system can be found at https://zenodo.org/record/6362498
  -->
 
-## Submission
-TBA
+## Submission Site
+The submission is done through the Codalab platform at https://codalab.lisn.upsaclay.fr/competitions/22699 for Arabic and English
+
+## Submission Guidelines
+
+- Each team must create only one account in CodaLab and submit their predictions exclusively through that account.
+- We will keep the leaderboard private till the end of the submission period, hence, results will not be available upon submission. All results will be available after the evaluation period.
+- You are allowed to submit max 50 submissions per day.
+- The last file submitted to the leaderboard will be considered as the final submission.
+- The output file should be of format [url]\t[label] (tab separated) for english. For arabic [claim index]\t[label] (tab separated) where [claim index] is the index/position of claim in json list of input file such as 0,1...
+- Name of the output file have to be `Task3_Numerical_claims_LANG.tsv` with `.tsv` extension (e.g., Task3_Numerical_claims_English.tsv); otherwise, you will get an error on the leaderboard.
+- You have to zip the tsv, `zip Task3_Numerical_claims_English.zip Task3_Numerical_claims_English.tsv` and submit it through the codalab page.
+
 <!-- 
 Submission is done through the Codalab platform at: https://codalab.lisn.upsaclay.fr/competitions/18809
 
