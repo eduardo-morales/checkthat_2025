@@ -22,37 +22,12 @@ __Table of contents:__
 - [Baselines](#baselines)
 - [Credits](#credits)
 
-<!-- ## Evaluation Results
-
-TBA -->
 
 ## List of Versions
 - [04/02/2025] Arabic dataset updated (We used the dataset released here: https://arxiv.org/pdf/2406.05559).
 - [13/01/2025] Training data released.
 
-<!-- * **subtask-2A-english**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [21/02/2023] previously released training data contained also validation data, they are now split in two separate files.
-  - [30/01/2023] training data are released.
-* **subtask-2A-arabic**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [10/03/2023] training and validation data are released.
-* **subtask-2A-dutch**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [16/03/2023] training and validation data are released.
-* **subtask-2A-german**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [02/03/2023] training and validation data are released.
-* **subtask-2A-italian**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [21/02/2023] validation data are released.
-  - [30/01/2023] training data are released.
-* **subtask-2A-turkish**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [02/03/2023] training and validation data are released.
-* **subtask-2A-multilingual**
-  - [03/05/2023] (unlabeled) test data are released.
-  - [23/03/2023] training and validation data are released. -->
+
 
 ## Contents of the Task 1 Directory
 
@@ -172,6 +147,9 @@ In particular, the settings are: ``mono_arabic``, ``mono_english``, ``mono_germa
 - It is required to submit the team name for each submission and fill out the questionnaire (link will be provided, once the competition started) to provide some details on your approach as we need that information for the overview paper.
 - You are allowed to submit max 200 submissions per day for each subtask.
 - We will keep the leaderboard private till the end of the submission period, hence, results will not be available upon submission. All results will be available after the evaluation period.
+
+### Submission Site
+The submission is done through the Codalab platform at https://codalab.lisn.upsaclay.fr/competitions/22756
 
 ## Leaderboard
 

@@ -4,11 +4,11 @@ This task focuses on verifying claims with numerical quantities and temporal exp
 
 Each claim would be provided with top-k BM25 evidence and participants can choose to carefully select from this evidence set or employ re–ranking approaches to improve fact verification performance. The evidence corpus is collected by pooling using multiple advanced claim decomposition approaches and the top-100 Bm25 evidences are retrieved from this pool to provide diverse perspectives required for claim verification.
 
-The task is offered in Arabic, English, and Spanish. 
+The task is offered in Arabic, English, and Spanish.
 
 Information regarding the annotation guidelines can be found in the following papers:
 
-> Venktesh V, Abhijit Anand, Avishek Anand, and Vinay Setty. 2024, _[QuanTemp: A real-world open-domain benchmark for fact-checking numerical claims] (https://doi.org/10.1145/3626772.3657874)_. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '24). Association for Computing Machinery, New York, NY, USA, 650–660. 
+> Venktesh V, Abhijit Anand, Avishek Anand, and Vinay Setty. 2024, _[QuanTemp: A real-world open-domain benchmark for fact-checking numerical claims] (https://doi.org/10.1145/3626772.3657874)_. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '24). Association for Computing Machinery, New York, NY, USA, 650–660.
 
 
 
@@ -104,7 +104,7 @@ Where: <br>
 * taxonomy: claim's taxonomy classified into *temporal*, *statistical*, *comparison* and *interval* <br/>
 * doc: Oracle document which is the justification given for the claim verdict by manual fact-checkers
 * label: *True*, *Conflicting* and *False*
-* Other meta-data such as claim source url, evidence url are given 
+* Other meta-data such as claim source url, evidence url are given
 
 
 The evidence collection provided consists of document ids paired with the corresponding text
@@ -178,8 +178,6 @@ The baseline is a RoBERTA based NLI model though participants are free to use an
 For this task, we have created a baseline system. The baseline system can be found at https://zenodo.org/record/6362498
  -->
 
-## Submission Site
-The submission is done through the Codalab platform at https://codalab.lisn.upsaclay.fr/competitions/22699 for Arabic and English
 
 ## Submission Guidelines
 
@@ -191,40 +189,11 @@ The submission is done through the Codalab platform at https://codalab.lisn.upsa
 - Name of the output file have to be `Task3_Numerical_claims_LANG.tsv` with `.tsv` extension (e.g., Task3_Numerical_claims_English.tsv); otherwise, you will get an error on the leaderboard.
 - You have to zip the tsv, `zip Task3_Numerical_claims_English.zip Task3_Numerical_claims_English.tsv` and submit it through the codalab page.
 
-<!-- 
-Submission is done through the Codalab platform at: https://codalab.lisn.upsaclay.fr/competitions/18809
+## Submission Sites
+The submission is done through the Codalab platform at
+- Arabic and English: https://codalab.lisn.upsaclay.fr/competitions/22699
+- Spanish: https://codalab.lisn.upsaclay.fr/competitions/22823
 
--   Make sure that you create one account for each team, and submit it through one account only.
--   The last file submitted to the leaderboard will be considered as the final submission.
--   For subtask 2A, there are 5 languages (Arabic, Bulgarian, English, German and Italian). Moreover, we define a multi-lingual evaluation scenario where we use a balanced sub-sample of all 5 languages to define multi-lingual evaluation splits.
--   Name of the output file has to be `subtask2A_LANG.tsv` where LANG can be arabic, bulgarian, english, german, italian, multilingual.
--   Get sure to set `.tsv` as the file extension; otherwise, you will get an error on the leaderboard.
--   Examples of submission file names should be `subtask2A_arabic.tsv`, `subtask2A_bulgarian.tsv`, `subtask2A_english.tsv`, `subtask2A_german.tsv`, `subtask2A_italian.tsv`, `subtask2A_multilingual.tsv`.
--   You have to zip the tsv into a file with the same name, e.g., `subtask2A_arabic.zip`, and submit it through the codalab page.
--   If you participate in the task for more than one language, for each language you must do a different submission.
--   for each submission, it is required to submit the team name. **Your team name must EXACTLY match the one used during the CLEF registration.**
--   You are allowed to submit max 200 submissions per day for each subtask.
--	Additionally, we ask you to fill out a questionnaire (link will be provided, once the evaluation cycle started started) to provide some details on your approach as we need that information for the overview paper.
--   We will keep the leaderboard private till the end of the submission period, hence, results will not be available upon submission. All results will be available after the evaluation period. --> -->
-
-<!-- Each participant must submit their results as a single .ZIP file. -->
-
-
-<!--
-The file must contain .TSV files, one file for each result.
-
-Participants are allowed to submit up to 2 results for each language.
-
-For each language, one will be the "main" one and considered for the final ranking,
-the other will be evaluated but not considered for the final ranking.
-
-The main file must be name as "result_LN_TYPE_TEAMNAME.csv";
-where LAN are two letters that identify the language
-(must be either EN, AR, NL, DE, IT, TR, or ML for multi-lingual),
-TYPE are four characters that indicate the type of submission
-(must be either "MAIN", "ALT1"),
-TEAMNAME is the identifier name of the team.
--->
 
 
 ## Credits

@@ -2,7 +2,7 @@
 This repository contains the _dataset_, _format checker, scorer and baselines_ for each task of the [CLEF2025-CheckThat! Lab](https://checkthat.gitlab.io/).
 
 The **2025 edition** of the lab focuses on tasks that are the core of the verification pipeline again as well as auxiliary tasks:
-Task 1 is on identification of subjectivity (a follow up of the \ct{} 2024 edition),
+Task 1 is on identification of subjectivity (a follow up of the CheckThat Lab 2024 edition),
 Task 2 is on claim normalization,
 Task 3 addresses fact-checking numerical claims, and
 Task 4 focuses on scientific web discourse processing.
@@ -37,7 +37,47 @@ Or send an email to: *clef-factcheck@googlegroups.com*
 
 
 # Citation
-TBA
+
+### ECIR 2025
+
+
+Alam, F. et al. (2025). The CLEF-2025 CheckThat! Lab: Subjectivity, Fact-Checking, Claim Normalization, and Retrieval. In: Hauff, C., et al. Advances in Information Retrieval. ECIR 2025. Lecture Notes in Computer Science, vol 15576. Springer, Cham. https://doi.org/10.1007/978-3-031-88720-8_68
+
+
+```
+@InProceedings{10.1007/978-3-031-88720-8_68,
+  author="Alam, Firoj
+  and Stru{\ss}, Julia Maria
+  and Chakraborty, Tanmoy
+  and Dietze, Stefan
+  and Hafid, Salim
+  and Korre, Katerina
+  and Muti, Arianna
+  and Nakov, Preslav
+  and Ruggeri, Federico
+  and Schellhammer, Sebastian
+  and Setty, Vinay
+  and Sundriyal, Megha
+  and Todorov, Konstantin
+  and V., Venktesh",
+editor="Hauff, Claudia
+  and Macdonald, Craig
+  and Jannach, Dietmar
+  and Kazai, Gabriella
+  and Nardini, Franco Maria
+  and Pinelli, Fabio
+  and Silvestri, Fabrizio
+  and Tonellotto, Nicola",
+title="The CLEF-2025 CheckThat! Lab: Subjectivity, Fact-Checking, Claim Normalization, and Retrieval",
+booktitle="Advances in Information Retrieval",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="467--478",
+isbn="978-3-031-88720-8",
+}
+
+```
 
 
 
