@@ -1,0 +1,18 @@
+1er archivo enviado por Guido.
+              precision    recall  f1-score   support
+
+       False     0.8106    0.8880    0.8475       241
+        True     0.1333    0.1739    0.1509        23
+ Conflicting     0.1667    0.0278    0.0476        36
+
+    accuracy                         0.7300       300
+   macro avg     0.3702    0.3632    0.3487       300
+weighted avg     0.6814    0.7300    0.6981       300
+
+[[214  22   5]
+ [ 19   4   0]
+ [ 31   4   1]]
+{'f1': 0.6981314972467597}
+{'f1': 0.34869573210690336}
+{'f1': 0.73}
+

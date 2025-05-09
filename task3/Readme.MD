@@ -68,14 +68,19 @@ TBA -->
 - Main folder: [scorer](clef2025-checkthat-lab/task3/baselines/English)<br/>
   - Contains a single file, clef2025-checkthat-lab/task3/baselines/English/eval_veracity_prediction.py, that checks the format of a submission and evaluate the various metrics.
   The corpus / evidence collection can be found at [Evidence collection](https://drive.google.com/drive/folders/1GYzSK0oU2MiaKbyBO3hE8kO4gdmxDjCv?usp=drive_link)
-  Alternatively instead of using whole corpus if you want to use BM25 retrieved evidence for original claims, please refer clef2025-checkthat-lab/task3/data/English/bm25_evidence. The bm25 evidence for training claims can be found at [train_bm25](https://drive.google.com/drive/folders/1ZYhjUB_POyBbrAWBxWh5FljyG81Gymuo?usp=drive_link)
+  Alternatively instead of using whole corpus if you want to use BM25 retrieved evidence for original claims, please refer clef2025-checkthat-lab/task3/data/English/bm25_evidence. The bm25 evidence for training claims and test can be found at [train and test bm25](https://drive.google.com/drive/folders/1ZYhjUB_POyBbrAWBxWh5FljyG81Gymuo?usp=drive_link)
 
 The bm25 evidence for decomposed questions for train and validation sets of English can be found at [Decomposed claims BM25 evidence](https://drive.google.com/drive/folders/1j8pr4xIe9B3tdxwy2jHuuc545YiiSPBK?usp=sharing)
 
 The Arabic corpus or evidence collection can be found at [Arabic Corpus] (https://drive.google.com/file/d/1J5RaPaWgD5hwUWJg7yCVVi4lM0gIYEYV/view?usp=sharing)
 
-BM25 evidence for arabic train, val and test sets can be found at [Arabic BM25 evidence](https://drive.google.com/drive/folders/1Gb-uBTuChSaY_R3qMQkbwSertywQTmCO?usp=sharing)
+BM25 evidence for arabic train, val and test sets can be found at [Arabic BM25 evidence](https://drive.google.com/drive/folders/1Gb-uBTuChSaY_R3qMQkbwSertywQTmCO?usp=sharing) 
+
+
 BM25 evidence for all train and validation claims together for Spanish. Map the claims to train and validation claim files to get corresponding evidence [Spanish Bm25 evidence] (https://drive.google.com/drive/folders/1MSaijGQ4jafMceFdi4hVacxzMxhNkWSl?usp=sharing)
+
+
+[Spanish Bm25 evidence] (https://drive.google.com/drive/folders/1MSaijGQ4jafMceFdi4hVacxzMxhNkWSl?usp=sharing) also contains bm25 evidence for test set.
 
 - [README.md](./README.md) <br/>
 
@@ -185,7 +190,7 @@ For this task, we have created a baseline system. The baseline system can be fou
 - We will keep the leaderboard private till the end of the submission period, hence, results will not be available upon submission. All results will be available after the evaluation period.
 - You are allowed to submit max 50 submissions per day.
 - The last file submitted to the leaderboard will be considered as the final submission.
-- The output file should be of format [url]\t[label] (tab separated) for english. For arabic [claim index]\t[label] (tab separated) where [claim index] is the index/position of claim in json list of input file such as 0,1...
+- The output file should be of format [url]\t[label] or [claim index]\t[label] (tab separated) for english. For arabic [claim index]\t[label] (tab separated) where [claim index] is the index/position of claim in json list of input file such as 0,1... Same format for SPanish - [claim index]\t[label]
 - Name of the output file have to be `Task3_Numerical_claims_LANG.tsv` with `.tsv` extension (e.g., Task3_Numerical_claims_English.tsv); otherwise, you will get an error on the leaderboard.
 - You have to zip the tsv, `zip Task3_Numerical_claims_English.zip Task3_Numerical_claims_English.tsv` and submit it through the codalab page.
 
